@@ -1,0 +1,538 @@
+/*
+Theme Name: Weedadvisor
+Author: Leonardo Farroco
+Author URI: https://wordpress.org/
+Description: ...
+
+*/
+
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans';
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background: #eaeaea;
+}
+
+.container{
+    box-shadow: 2px 2px 3px #ccc; 
+    background: #fff;
+}
+.jumbotron .container,footer .container{
+    background: transparent;
+    box-shadow: none; 
+}
+
+.fa{
+    color: #070;
+    margin-right: 10px;
+}
+
+/* navbar */
+.navbar-default {
+    background: #4a9e4b;
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.38);
+    z-index: 3;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.navbar-default a,.navbar-default a:active,.navbar-default:hover{
+    color: #fff;
+}   
+
+.navbar-default .navbar-toggle .icon-bar{
+    background: #fff;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+    background: #fff;
+    height: 100%;    
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+    color: #fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background-color: #070;
+}
+
+.navbar-default .navbar-nav>li>a,.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+    color: #fff;
+    font-size: 18px;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    opacity: 0.8;
+}
+.section{
+    padding: 20px 0;
+}
+
+#hero-picture{
+    width: 100%;
+    height: 250px;    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    position: relative;
+    border-bottom: #070 solid 5px;
+    margin-top: -20px;
+}
+#hero-picture h2{
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    position: relative;
+    font-size: 46px;
+    padding: 8px;
+}
+
+
+#wppb-register-user{
+    padding: 10px;
+    border: #eee solid 1px;
+    border-radius: 3px;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.wppb-form-field{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.wppb-form-field *{
+    width: 100%;
+}
+.wppb-form-field input,input[type="text"],textarea{
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+textarea{
+    min-height: 120px;
+}
+
+input[type="button"],input[type="submit"]{
+
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #333;    
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.input[type="button"]:hover,input[type="submit"]:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    color: #333;
+    text-decoration: none;
+}
+
+@media (min-width: 768px){
+    .navbar-nav>li>a {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .navbar-brand {
+        padding: 25px 15px;       
+    }
+}
+
+
+
+.dispensary-logo-wrapper{
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -80px;
+
+    line-height: 160px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+    border: #999 solid 1px;   
+   
+}
+
+.logo-wrapper {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    background: #fff;
+    line-height: 100px;
+    border-radius: 11px;
+    top: 20%;
+    text-align: center;
+}
+
+.dispensary-logo {
+    max-width: 90px;
+}
+
+.line{
+    width:100%;
+    margin-bottom: 10px;
+    float: left;
+}
+
+/* review form */
+#respond label{
+    width: 100%;
+}
+
+/* star rating */
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+    font-size: 2em;
+    color: #ff9b00;;
+    text-shadow: 0px 1px 0px #aaa,0px -1px 0px #aaa;
+}
+
+.dispensary-item h2{
+    margin: 10px 0;
+
+}
+
+.dispensary-item{
+    color: #070;
+    min-height: 125px;
+}
+.dispensary-item img{
+    width: 120px;
+    margin-top: 10px;
+}
+.dispensary-item a{
+    color: #070;
+}
+
+.strain .panel, .strain th{
+    text-align: center;
+}
+
+.hybrid .badge {
+    background: url('img/types/hybrid.jpg');
+}
+
+.indica .badge {
+    background: url('img/types/indica.jpg');
+}
+
+.sativa .badge {
+    background: url('img/types/sativa.jpg');
+}
+
+a.strain{
+    text-decoration: none;
+}
+a.strain *{
+    color: #000;    
+}
+a.strain .badge{
+    color: #fff;
+    width: 100%;
+    border-radius: 3px;
+    padding: 30px 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom: #ccc solid 1px;
+    background-size: cover;
+    font-size: 24px;
+    text-shadow: 0px 0px 4px #030;
+}
+.strain:hover .panel{
+    background: rgba(22, 185, 22, 0.28)
+}
+
+.strain h2{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    padding-top: 0px;
+    display: block;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+#strain-main #hero-picture h2{
+    top: 0;
+    margin-bottom: 12px;
+}
+
+#hero-picture .backdrop{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.28);
+}
+
+#home-main,#primary{
+    padding-top:20px;
+}
+
+#home .jumbotron{
+    background: url('img/marijuana.jpg');
+    background-size: cover;
+    color: #fff;
+    margin-bottom: 0;
+} 
+
+#home .jumbotron h1, #home .jumbotron p{
+    background: rgba(0, 100, 0, 0.28);
+    padding: 5px;
+} 
+
+#home h2{
+    color: #070;
+}
+
+.strain.card {
+    min-height: 230px;
+    border-radius: 0;
+    box-shadow: 1px 1px 3px #ccc;
+    border: none;
+}
+
+.strain.card .img-container {
+    height: 100px;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+    width: 300px;
+}
+
+.strain.card img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+footer.section{
+    background: #124413;
+    border-top: #ccc solid 1px;
+    box-shadow: -8px 0 5px #ccc;
+}
+
+footer ul,footer ul li{
+    list-style: none;
+    padding: 0;
+}
+
+footer a:link,footer a:visited{
+    color: #fff;
+}
+
+
+footer .weedadvisor{
+    background: #fff;
+    padding: 16px;
+    color: #4a9e4b;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+/* wrapper for the 'load more' button*/
+.alm-btn-wrap{
+    width:100%;
+}
+
+article{
+    border-bottom: #ccc solid 1px;
+    line-height: 200%;
+}
+article:last-child{
+    border-bottom: none;
+    padding-bottom: 20px;
+}
+
+ol.comment-list{
+    padding: 0; 
+}
+
+.comment{
+    border: #070 solid 1px;
+    margin-bottom: 13px;
+    padding: 12px;
+    box-shadow: 1px 1px 3px #999;
+}
+
+h1,h2,h3,h4,h5{
+    color: #070;
+}
+
+.pagination{
+    padding: 20px 0;
+}
+
+.says{
+    display: none;
+}
+
+.comment .avatar{
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: #8a8 solid 2px;
+}
+
+.section-title{
+    font-weight: bold;
+    font-size: 36px;
+    border-bottom: #ccc solid 1px;
+    padding-bottom: 10px;
+}
+
+.dispensary-content{
+    margin: 10px;
+    box-shadow: 1px 3px 3px #ccc;
+    display: inline-flex;
+    padding: 10px;
+    min-height: 140px;
+    width:100%;
+}
+.dispensary-content::hover{
+    background: rgba(0,155,0,0.1);
+}
+
+#menu-main-menu li{
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    background-position: 8px 50%;
+    border-right: #fff solid 1px;
+    background-size: 30px;
+}
+
+#menu-main-menu li a{
+    color:#fff;
+}
+
+#menu-main-menu li:hover{
+    background-color:#070;
+}
+
+#menu-main-menu li:nth-child(1){
+      padding-left: 10px;
+}
+
+#menu-main-menu li:nth-child(2){
+    background-image: url('img/icon-dispensary.png');
+}
+
+#menu-main-menu li:nth-child(3){
+    background-image: url('img/icon-strains.png');
+}
+
+#menu-main-menu li:nth-child(4){
+    background-image: url('img/icon-news.png');
+}
+
+.navbar .fa, .navbar a:link, .navbar a:hover{
+    color: #fff;
+}
+
+.username{
+    float:left;
+    margin-top: 30px;
+}
+.logout{
+    float:right;
+}
+
+.rmfield {
+    width: 20%;
+}
+.strain .panel{
+    min-height: 250px;
+}
+.strain .panel-body table{
+    margin-bottom: 0;
+}
+
+#add-strain-ad{
+    background: rgba(74, 158, 75, 0.53);
+    margin-bottom: 10px;
+}
+
+#add-strain-ad img{
+    margin-right: 10px;
+}
+
+
+#news table{    
+    margin-bottom: 10px;    
+    width: 100%;  
+}
+#news article{
+    margin: 10px 0;
+    float: left;
+    width: 100%;
+    border: #ccc solid 1px;
+    box-shadow: 2px 2px 4px #efefef;
+    padding: 10px;
+}
+
+#news table td, #news .rmagic table.rm-table,#news  td,#news  th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: none;
+}
+
+#news table tr td:nth-child(2) font br:first-child,
+#news table tr td:nth-child(2) font div:nth-child(2){
+    display:none;
+}
+
+#news h2,
+#news a,#news a:hover, #news a:focus{
+    color: #070;    
+}
+
+#news a:hover{
+    text-decoration: underline;
+}
